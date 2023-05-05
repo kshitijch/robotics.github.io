@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navbar a:hover {
+    color: blueviolet;
+}
+
+.navbar img {
+    width: 120px;
+    height: 50px;
+   
+    margin-left: 30px;
+    
+}
+
+.navbar-right {
+    margin-left: auto;
+}
+.navbar-right a:active{
+
+color:red;
+}
+
+.background{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6) url(images/coverhand1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+.cover{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.cover h1{
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Bruno Ace SC', cursive;
+    position: relative;
+    bottom: 20px;
+    font-size: 100px;
+    letter-spacing: 10px;
+    font-weight: lighter;
+}
+.cover h2{
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Bruno Ace SC', cursive;
+    bottom: 10px;
+    position: relative;
+    font-size: 40px;
+    letter-spacing: 8px;
+}
+.cover h3{
+    position: relative;
+    top: 110px;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 5px;
+    text-align: center;
+}
+.cover h3 span{
+    color: blueviolet;
+}
+.scroll{
+    width: 70px;
+    height: 70px;
+    margin-top: 120px;
+    background: url(images/scroll.jpeg);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 35px;
+    padding: 40px;
+    animation: dance 1s infinite;
+    cursor: pointer;
+}
+
+@keyframes dance {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+#aboutus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 90px;
+}
+.dash{
+    background-color: blueviolet;
+    width: 8%;
+    margin-top: 25px;
+    height: 10px;
+    border-radius: 30px;
+}
+#aboutus h1{
+    padding-top: 70px;
+    font-size: 35px;
+    font-family: 'Bruno Ace SC', cursive;
+}
+.about{
+    width: 70%;
+}
+.about p{
+    padding-top: 70px;
+    font-size: 23px;
+    line-height: 1.9;
+    color: #757575;
+    text-align: justify;
+}
+
+
+
+
+#contactus{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.6) url(images/robots.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode:darken;
+    align-items: center;
+}
+ 
+.conleft{
+    width: 60%;
+    
+    display: flex;
+    justify-content: center;
+}
+.conleft1{
+    width: 70%;
+}
+.conleft h1{
+    color: white;
+    font-size: 3.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.conleft p{
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 30px;
+    font-size: 1.3rem;
+    line-height: 150%;
+
+}
+.conright{
+    width: 40%;
+}
+
+
+.conright1{
+    width: 80%;
+}
+
+
+
+form {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color:white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    background-color: #f8f8fa;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+ 
+  input[type="submit"] {
+    width: 100%;
+    background-color:blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  
+  @media (max-width:600px) {
+    .cover h1{
+        font-size:25px ;
+    }
+    .cover h2{
+        font-size: 20px;
+    }
+  
+    #contactus{
+        flex-direction: column;
+        height: 200%;
+    }
+    .conleft{
+        width: 100%;
+    }
+    .conright{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+  }
+}
